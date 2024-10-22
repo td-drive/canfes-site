@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+        <img alt="ここにスタンプ画像を貼る">
+        <button onclick="qrButtonClick()">ボタン</button>
+
+        <script>
+            document.cookie = 'address=Tokyo';
+            function qrButtonClick() {
+                const id = "test";
+                document.cookie = "test=true;";
+                window.location.assign("../index.html");
+            }
+        </script>
+    </body>
+</html>
