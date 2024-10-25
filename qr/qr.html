@@ -12,7 +12,7 @@
         <script>
             function qrButtonClick() {
                 const id = "test=true";
-                $.cookie(id, 1, {domain: "https://td-drive.github.io/", path: "/"})
+                document.cookie = id + "path=/"
                 window.location.assign("../index.html");
             }
         </script>
