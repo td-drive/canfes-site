@@ -10,10 +10,9 @@
         <button onclick="qrButtonClick()">ボタン</button>
 
         <script>
-            document.cookie = 'address=Tokyo';
             function qrButtonClick() {
-                const id = "test";
-                document.cookie = "test=true;";
+                const id = "test=true";
+                $.cookie(id, 1, {domain: "https://td-drive.github.io/", path: "/"})
                 window.location.assign("../index.html");
             }
         </script>
