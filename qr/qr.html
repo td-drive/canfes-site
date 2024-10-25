@@ -13,7 +13,7 @@
         <script>
             function qrButtonClick() {
                 const id = "test=true; ";
-                document.cookie = id + "path=/"
+                document.cookie = id + "path=/; max-age=86400;"
                 window.location.assign("../index.html");
             }
         </script>
