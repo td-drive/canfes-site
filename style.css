@@ -15,3 +15,13 @@
     text-align: center;
     vertical-align: middle;
 }
+
+.qr-stamp-page {
+    display: flex;
+    flex-flow: column;
+}
+
+.finish-qr {
+    display: flex;
+    flex-flow: column;
+}
