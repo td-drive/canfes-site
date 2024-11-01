@@ -1,4 +1,4 @@
-// スタンプの状態をcookieから取得
+3// スタンプの状態をcookieから取得
 function getStampStatus() {
     const cookies = document.cookie.split("; ");
     const status = {};
@@ -48,10 +48,10 @@ function displayBingoCard() {
 
         if(stampStatus[stampId]) {
             const img = document.createElement("img");
-            img.src = 'path/to/stamp_${cell.innerText}.png';
+            img.src = './img/stamp${cell.innerText}.png';
             img.alt = `Stamp ${cell.innerText}`;
             cell.innerHTML = "";
-            cell.appendChild(img);
+            cell.agippendChild(img);
         }
     });
 }
