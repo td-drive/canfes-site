@@ -53,7 +53,7 @@ function displayBingoCard() {
             img.src = './img/stamp' + cell.innerText +  '.png';
             img.alt = `Stamp ${cell.innerText}`;
             cell.innerHTML = "";
-            cell.agippendChild(img);
+            cell.appendChild(img);
         }
     });
 }
