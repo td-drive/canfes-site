@@ -44,10 +44,10 @@ function displayBingoCard() {
     const cells = document.querySelectorAll(".bingo-cell");
 
     cells.forEach(cell => {
+        console.log("test: " + cell.innerText)
         const stampId = `qr${cell.innerText}`;
 
         if(stampStatus[stampId]) {
-            console.log(cell.innerText)
             const img = document.createElement("img");
             img.src = './img/stamp' + cell.innerText +  '.png';
             img.alt = `Stamp ${cell.innerText}`;
