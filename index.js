@@ -48,6 +48,7 @@ function displayBingoCard() {
         const stampId = `qr${cell.innerText}`;
 
         if(stampStatus[stampId]) {
+            console.log("stamp!: " + cell.innerText + "stampid" + stampId);
             const img = document.createElement("img");
             img.src = './img/stamp' + cell.innerText +  '.png';
             img.alt = `Stamp ${cell.innerText}`;
