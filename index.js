@@ -74,9 +74,8 @@ function initializeBingo() {
     displayBingoCard();
 
     const stampStatus = getStampStatus();
-    if (checkBingo(stampStatus)) {
-        displayTrivia();
-    }
+    checkBingo(stampStatus);
+    displayTrivia();
 }
 
 // ページ読み込み後の初期化実行
