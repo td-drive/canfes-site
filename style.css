@@ -1,8 +1,16 @@
 .bingo-card {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
+    width: 360px;
     height: auto; /* コンテナの高さを画面全体に設定 */
+    aspect-ratio: 1 / 1; /* アスペクト比を1:1に設定 */
+}
+
+.stamp {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 body {
@@ -10,6 +18,8 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    height: 100vh;
+    place-items: center;
 }
 
 .bingo-cell {

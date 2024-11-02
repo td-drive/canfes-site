@@ -52,6 +52,7 @@ function displayBingoCard() {
             const img = document.createElement("img");
             img.src = './img/stamp' + cell.innerText +  '.png';
             img.alt = `Stamp ${cell.innerText}`;
+            img.className = "stamp";
             cell.innerHTML = "";
             cell.appendChild(img);
         }
