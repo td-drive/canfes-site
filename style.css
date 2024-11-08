@@ -37,6 +37,15 @@ body {
 .qr-stamp-page {
     display: flex;
     flex-flow: column;
+    margin-top: 10rem;
+}
+
+.qr-stamp-button {
+    text-align: center;
+    margin: 2rem;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 1rem;
 }
 
 .finish-qr {
@@ -47,6 +56,7 @@ body {
 .qr-stamp-img {
     width: 10rem;
     height: auto;
+    margin: 0 auto;
 }
 
 @media screen and (max-width: 768px) {
