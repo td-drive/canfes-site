@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+    <body>
+        <div class="qr-stamp-page">
+            <img class="qr-stamp-img" alt="../img/stamp9.png">
+            <button class="qr-stamp-button" onclick="qrButtonClick()">ボタン</button>
+        </div>
+
+        <script>
+            const id = "qr9=true; ";
+
+            function finishQR() {
+                const key = "test";
+                const cookies = document.cookie.split(';')
+
+                const foundCookie = cookies.find(
+                    (cookie) => cookie.split('=')[0].trim() === key.trim()
+                )
+
+                if(foundCookie) {
+                    window.location.assign("./finish.html")
+                }
+            }
+
+            function qrButtonClick() {
+                document.cookie = id + "path=/; max-age=86400;"
+                window.location.assign("../index.html");
+            }
+        </script>
+    </body>
+</html>
