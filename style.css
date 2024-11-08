@@ -43,3 +43,14 @@ body {
     display: flex;
     flex-flow: column;
 }
+
+.qr-stamp-img {
+    width: 10rem;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 20px;
+    }
+}
