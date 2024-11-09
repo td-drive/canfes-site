@@ -43,6 +43,8 @@ body {
 .qr-stamp-button {
     text-align: center;
     margin: 2rem;
+    margin-left: 0px;
+    margin-right: 0px;
     width: 10rem;
     height: 3rem;
     border-radius: 1rem;
